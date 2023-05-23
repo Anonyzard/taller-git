@@ -15,6 +15,6 @@ jobs:
           message: |
             [${{ github.actor }}](https://github.com/${{ github.actor }}) created a commit on [${{ github.repository }}](https://github.com/${{ github.repository }})
             
-            *Commit message*: ```${{ github.event.commits[0].message }}```
+            *Commit message*: ```${{ github.event.head_commit.message }}```
             
             [See changes](https://github.com/${{ github.repository }}/commit/${{github.sha}})
