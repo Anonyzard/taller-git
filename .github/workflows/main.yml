@@ -13,9 +13,9 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           format: markdown
           message: |
-            **${{ github.actor }} created commit**:
-            **Commit message**: ```${{ github.event.commits[0].message }}```
+            *${{ github.actor }} created commit*:
+            *Commit message*: ```${{ github.event.commits[0].message }}```
             
-            **Repository**: __${{ github.repository }}__
+            *Repository*: _${{ github.repository }}_
             
-            **See changes**: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+            [*See changes*](https://github.com/${{ github.repository }}/commit/${{github.sha}})
